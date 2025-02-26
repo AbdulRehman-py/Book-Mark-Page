@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-logo">
-                <img src="/images/logo-bookmark.svg" className='logo-2' alt="Bookmark Logo" />
+                <img src="/images/logo-bookmark-white.svg" className='logo-2' alt="Bookmark Logo" />
             </div>
             <ul className="footer-links">
                 <a href="#">Features</a>

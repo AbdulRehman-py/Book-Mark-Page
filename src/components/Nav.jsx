@@ -1,5 +1,4 @@
 import './nav.css';
-
 import { useState } from 'react';
 
 const NavBar = () => {
@@ -12,7 +11,7 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src="/public/images/logo-bookmark.svg" alt="Logo" />
+                <img src="/images/logo-bookmark.svg" alt="Logo" />
             </div>
             <ul className={`nav ${isToggle ? "open" : ""}`}>
                 <li><a href="/">Features</a></li>

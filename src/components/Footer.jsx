@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="footer">
                 <div className="footer-logo">
-                    <img src="/images/logo-bookmark.svg" className='logo-2' alt="Bookmark Logo"
+                    <img src="/public/images/logo-bookmark.svg" className='logo-2' alt="Bookmark Logo"
                    />
                 </div>
                 <ul className="footer-links">
@@ -14,8 +14,8 @@ const Footer = () => {
                     <a href="#">Contact</a>
                 </ul>
                 <div className="footer-social">
-                    <img className='icon' src="/images/icon-facebook.svg" alt="Facebook Icon" />
-                    <img className='icon' src="/images/icon-twitter.svg" alt="Twitter Icon" />
+                    <img className='icon' src="/public/images/icon-facebook.svg" alt="Facebook Icon" />
+                    <img className='icon' src="/public/images/icon-twitter.svg" alt="Twitter Icon" />
                 </div>
            
         </footer>

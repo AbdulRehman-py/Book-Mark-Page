@@ -23,28 +23,28 @@ const Faq = () => {
                 <div className='q-div'>
                     <div className='question' onClick={() => handleClick(1)}>
                         <span>What is a Bookmark?</span>
-                        <img src="/images/icon-arrow.svg" alt="Arrow Icon" />
+                        <img src="/public/images/icon-arrow.svg" alt="Arrow Icon" />
                     </div>
                     <p className={`disappear ${show === 1 ? 'show' : ''}`}>A bookmark is a saved link to a web page that you can access quickly.</p>
                 </div>
                 <div className='q-div'>
                     <div className='question' onClick={() => handleClick(2)}>
                         <span>How can I request a new browser?</span>
-                        <img src="/images/icon-arrow.svg" alt="Arrow Icon" />
+                        <img src="/public/images/icon-arrow.svg" alt="Arrow Icon" />
                     </div>
                     <p className={`disappear ${show === 2 ? 'show' : ''}`}>You can request a new browser by contacting our support team.</p>
                 </div>
                 <div className='q-div'>
                     <div className='question' onClick={() => handleClick(3)}>
                         <span>Is there a mobile app?</span>
-                        <img src="/images/icon-arrow.svg" alt="Arrow Icon" />
+                        <img src="/public/images/icon-arrow.svg" alt="Arrow Icon" />
                     </div>
                     <p className={`disappear ${show === 3 ? 'show' : ''}`}>Yes, we have a mobile app available for both iOS and Android.</p>
                 </div>
                 <div className='q-div'>
                     <div className='question' onClick={() => handleClick(4)}>
                         <span>What about other Chromium browsers?</span>
-                        <img src="/images/icon-arrow.svg" alt="Arrow Icon" />
+                        <img src="/public/images/icon-arrow.svg" alt="Arrow Icon" />
                     </div>
                     <p className={`disappear ${show === 4 ? 'show' : ''}`}>Our extension is compatible with all Chromium-based browsers.</p>
                 </div>

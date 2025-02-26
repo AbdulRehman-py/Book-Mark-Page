@@ -1,0 +1,130 @@
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    
+    --SoftBlue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --VeryDarkBlue: hsl(229, 31%, 21%);
+      --VeryLightGrey: #f8f9fa;
+      --White: #ffffff;
+    
+    }
+    
+.faq-container h2 {
+    font-size: 1.5rem;
+    color: var(--VeryDarkBlue);
+    
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.faq-container p {
+    width: 50%;
+    color: var(--GrayishBlue);
+    margin: 0;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 1rem 0 1rem 0;
+    
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+.question span {
+    margin-right: 2rem;
+    color: var(--VeryDarkBlue);
+}
+
+
+
+.bq {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    background-color: var(--SoftBlue);
+    color: var(--White);
+    border: 1px solid var(--SoftBlue);
+}
+.bq:hover {
+    background-color: var(--SoftRed);
+    border: 1px solid var(--SoftRed);
+}
+
+.q-div {
+    border-top: 1px solid var(--GrayishBlue);
+    padding: 0.5rem 0 0.5rem 0;
+    
+}
+
+.q-div:first-child {
+    margin-top: 2rem;
+}
+
+.q-div:last-child {
+    border-bottom: 1px solid var(--GrayishBlue);
+}
+
+.disappear {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .faq-container H2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .question span {
+        font-size: 0.9rem;
+    }
+
+    .faq-container H2 {
+        font-size: 1rem;
+    }
+
+    .faq-container p {
+        font-size: 0.8rem;
+    }
+}
+
+.questions-container {
+    padding: 1rem;
+}
+
+@media (max-width: 700px) {
+    .question span {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-wdith: 450px) {
+    .question span {
+        margin-right: 0.5rem;
+        
+    }
+
+    .question span {
+        font-size: 0.7rem;
+    }
+    
+    
+}

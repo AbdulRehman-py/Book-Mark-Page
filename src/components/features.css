@@ -1,0 +1,229 @@
+.li-feature {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    margin-top: 1rem;
+    
+}
+
+.li-feature h3:hover {
+    color: var(--SoftRed);
+    cursor: pointer;
+}
+
+
+.li-feature h3 {
+    color: var(--GrayishBlue);
+    font-family: "Rubik", sans-serif;
+    font-size: 1.1rem;
+}
+
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.features-section h2 {
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    color: var(--VeryDarkBlue);
+}
+
+.features-section p {
+    font-family: "Rubik", sans-serif;
+    color: var(--GrayishBlue);
+    font-size: 1rem;
+    width: 60%;
+   
+}
+
+.features-section  {
+    padding-left: 2rem;
+}
+
+
+
+
+
+.img-content-section {
+    display: flex;
+    
+    gap: 1rem;
+
+}
+
+.featue-content h4 {
+    font-size: 1.7rem;
+    color: var(--VeryDarkBlue);
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    
+
+}
+
+.center {
+    text-align: center;
+}
+
+.img-content-section {
+    padding: 4rem 3rem 4rem 3rem;
+    
+}
+
+.img2 {
+    background-image: url('../../images/illustration-features-tab-3.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+   
+}
+
+.li-feature h3 {
+    border-bottom: 1px solid var(--GrayishBlue);
+    padding-bottom: 1rem;
+}
+
+.li-feature h3:hover {
+    border-bottom: 3px solid var(--SoftRed);
+    cursor: pointer;
+}
+
+
+
+:root {
+    
+    --SoftBlue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --VeryDarkBlue: hsl(229, 31%, 21%);
+    
+    }
+
+    @media (max-width: 1100px) {
+        .features-section p {
+           width: 100%;
+        }
+        .featue-content h4 {
+            font-size: 1.5rem;
+        }
+        .featue-content {
+            padding-left: 0rem;
+        }
+
+        .features-section  {
+            padding-left: 0rem;
+        }
+    }
+
+    @media (max-width: 1050px) {
+        .features-section h2 {
+            font-size: 1.4rem;
+        }
+        .featue-content h4 {
+            font-size: 1.5rem;
+            margin: 0;
+            margin-top: 0.6rem;
+        }
+
+      
+
+     .li-feature h3 {
+        
+        font-size: 0.9rem;
+    
+     
+    
+    }
+
+    
+    
+
+    @media (max-width: 850px) {
+        .featue-content h4 {
+            font-size: 1.2rem;
+        }
+        .features-section h2 {
+            font-size: 1.2rem;
+        }
+
+        .featue-content {
+            padding-left: 0;
+        }
+
+      
+    }
+}
+
+@media (max-width: 750px) {
+
+    .featue-content h4 {
+        font-size: 1rem;
+        margin: 0;
+    }
+   
+    .featue-content {
+        padding-left: 3rem;
+    }
+    
+    .img2 {
+        background-image: url('../../images/illustration-features-tab-2.svg');
+        background-size: fill;
+    }
+}
+.center {
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+
+    .img2 {
+        background-image: url('../../images/illustration-features-tab-1.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        margin-left: 2.5rem;
+        height: 170px;
+    }
+    .img-content-section {
+        flex-direction: column;
+        gap: 2rem;
+        
+    }
+
+    .li-feature {
+        flex-direction: column;
+        gap: 1.5rem;
+        border: none;
+    }
+
+    .li-feature h3 {
+        border-bottom: 1px solid var(--GrayishBlue);
+        padding-bottom: 1rem;
+    }
+
+    .li-feature h3:hover {
+        border-bottom: 3px solid var(--SoftRed);
+        cursor: pointer;
+    }
+
+    .features-section h2 {
+        font-size: 1rem;
+        
+    }
+    .features-section p {
+        font-size: 0.9rem;
+    }
+
+    
+}
+
+@media (max-width: 450px) {
+    .img2 {
+        margin: 0;
+    }
+}

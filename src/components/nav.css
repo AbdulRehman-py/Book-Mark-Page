@@ -1,0 +1,136 @@
+:root {
+    --SoftBlue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --VeryDarkBlue: hsl(229, 31%, 21%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    color: black;
+    position: relative;
+    z-index: 10;
+}
+
+.logo a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.nav li {
+    margin-left: 2rem;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--GrayishBlue);
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+    color: var(--SoftRed);
+}
+
+.login {
+    background-color: transparent;
+    color: var(--SoftRed);
+    padding: 0.4rem 1.2rem;
+    border: 2px solid var(--SoftRed);
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    margin-left: 2rem;
+}
+
+.login:hover {
+    background-color: var(--SoftRed);
+    color: white;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    
+}
+
+.hamburger-menu .bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: var(--VeryDarkBlue);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(42deg);
+    top: 0.5rem;
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 0.4rem;
+}
+
+.nav.open {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    z-index: 9;
+}
+
+.nav.open li a {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 630px) {
+    .nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+.subscription-form {
+  background-color: #4A6CF7;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Rubik', sans-serif;
+ 
+}
+
+.subscribers-count {
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.headline {
+  color: #FFFFFF;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+  outline: none;
+}
+
+.contact-button {
+  background-color: #FF6B6B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #FF4C4C;
+}
+
+
+@media (max-width: 520px) {
+    .form-container {
+        flex-direction: column;
+      }
+
+      .form-container {
+        font-size: 1rem;
+        gap: 1rem;
+      }
+      .subscription-form h1 {
+        font-size: 1rem;
+      }
+}
+
+
+@media (max-width: 320px) {
+    .contact-button {
+        font-size: 0.8rem;
+    }
+
+    .email-input {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,191 @@
+.hero-section {
+    display: flex;
+    padding: 2rem;
+}
+
+:root {
+    
+    --SoftBlue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --VeryDarkBlue: hsl(229, 31%, 21%);
+    
+    }
+
+.buttons-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-family: "Rubik", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: var(--VeryDarkBlue);
+}
+
+.btn {
+    padding: 0.6rem 0.9rem 0.6rem 0.9rem;
+    color: var(--VeryDarkBlue);
+    border: 1px solid var(--VeryDarkBlue);
+    border-radius: 5px;
+    background-color: transparent;
+
+
+}
+
+.hero-image  {
+    background-image: url('../../images/illustration-hero.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.btn:hover {
+    background-color: var(--VeryDarkBlue);
+    color: white;
+    cursor: pointer;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    padding-top: 4rem;
+}
+
+.hero-image {
+    padding-top: 2rem;
+}
+
+.content-section p {
+    color: var(--GrayishBlue);
+}
+
+@media (max-width: 1100px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+}
+@media (max-width: 1050px) {
+
+    
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-image {
+        padding: 0;
+        padding-top: 2rem;
+        
+       
+    }
+
+   
+}
+
+@media (max-width: 1000px) {
+   
+
+   .content-section {
+    padding-top: 0;
+   }
+
+
+}
+
+@media (max-width: 935px) {
+   
+    .hero-section {
+        
+        padding: 1.5rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .buttons-div button {
+        font-size: 0.8rem;
+    }
+
+   
+
+    
+}
+
+@media (max-width: 900px) {
+  .hero-section h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 750px) {
+   .hero-image {
+    background-image: url('../../images/illustration-features-tab-1.svg');
+   }
+  }
+  
+
+  @media (max-width: 700px) {
+   .hero-section h1 {
+    font-size: 1.1rem;
+    
+   }
+   .btn {
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+   }
+
+   .hero-section p {
+    font-size: 0.9rem;
+   }
+
+   .btn {
+    font-size: 0.8rem;
+   }
+
+   @media (max-width: 750px) {
+    .hero-image {
+     background-image: url('../../images/illustration-features-tab-1.svg');
+    }
+   }
+}
+   
+@media (max-width: 650px) {
+    .hero-section {
+       display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr;
+         gap: 1.5rem;
+    }
+
+    .hero-image {
+        grid-row: 1/2;
+        background-position: left;
+        margin: 0;
+        margin-left: 2.5rem;
+        
+    }
+
+}
+
+@media (max-width: 450px) {
+    .hero-image {
+        margin-left: 0;
+    }
+
+    .navbar {
+        padding: 2rem;
+    }
+
+    .btn {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    }
+}

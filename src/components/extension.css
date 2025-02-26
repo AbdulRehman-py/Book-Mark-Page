@@ -1,0 +1,190 @@
+:root {
+    
+    --SoftBlue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --VeryDarkBlue: hsl(229, 31%, 21%);
+    --VeryLightGrey: #f8f9fa;
+    }
+    
+
+    .browsers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+.browser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--VeryLightGrey);
+    padding: 2rem;
+    border-radius: 8px;
+    font-family: "Rubik", sans-serif;
+    color: var(--VeryDarkBlue);
+    max-height: 100%;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+.img {
+    background-image: url('../../images/logo-opera.svg'); /* Correct relative path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+   
+}
+
+.img {
+    background-image: url('../../images/logo-chrome.svg'); /* Correct relative path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+}
+
+.img {
+    background-image: url('../../images/logo-firefox.svg'); /* Correct relative path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 100%;
+}
+
+
+
+
+.browser h3 {
+    color: var(--VeryDarkBlue);
+    
+}
+
+.extension {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+
+.extension p {
+    margin-bottom: 3rem;
+    color: var(--GrayishBlue);
+}
+
+.btn2 {
+    padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+    background-color: var(--SoftBlue);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: var(--SoftBlue);
+}
+
+.b2 {
+    margin-top: 2rem;
+
+}
+
+.b3 {
+    margin-top: 5rem;
+}
+
+.extension p {
+    width: 40%;
+    text-align: center;
+    margin: 0;
+  }
+
+    .extension h2 {
+       font-family: "Rubik", sans-serif;
+         color: var(--VeryDarkBlue);
+         font-size: 1.6rem;
+    }
+
+    @media (max-width: 900px) {
+        .browser h3 {
+            font-size: 1rem;
+        }
+
+        .browser span {
+            font-size: 0.9rem;
+        }
+
+        .extension h2 {
+            font-size: 1.3rem;
+        }
+    }
+    .i1 {
+        background-image: url('../../images/logo-opera.svg'); /* Correct relative path */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50px;
+       
+    }
+
+    .i2 {
+        background-image: url('../../images/logo-chrome.svg'); /* Correct relative path */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50px;
+    }
+
+    .i3 {
+        background-image: url('../../images/logo-firefox.svg'); /* Correct relative path */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50px;
+    }
+
+    
+@media (max-width: 700px) {
+    .browser h3 {
+        font-size: 0.8rem;
+    }
+
+    .browser span {
+        font-size: 0.8rem;
+    }
+
+    .extension h2 {
+        font-size: 1rem;
+    }
+    .extension p {
+        font-size: 0.8rem;
+    }
+
+    .btn2 {
+        font-size: 0.7rem;
+
+        padding: 0.3rem;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .browsers {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .browser {
+        padding: 1rem;
+    }
+    .browser:first-of-type {
+        margin-top: 2rem;
+    }
+}
